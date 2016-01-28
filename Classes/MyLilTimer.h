@@ -91,7 +91,7 @@ MyLilTimerClock MyLilTimerClockFromBehavior(MyLilTimerBehavior behavior);
  * \param userInfo an arbitrary object associated with the timer.
  *     The timer releases this object when it's invalidated (after the action has been sent to the target).
  */
-- (instancetype)initWithBehavior:(MyLilTimerBehavior)behavior timeInterval:(NSTimeInterval)intervalSinceNow target:(id)target selector:(SEL)action userInfo:(id)userInfo;
+- (instancetype)initWithBehavior:(MyLilTimerBehavior)behavior timeInterval:(NSTimeInterval)intervalSinceNow target:(id)target selector:(SEL)action userInfo:(id)userInfo NS_DESIGNATED_INITIALIZER;
 
 /**
  * Currently only timers on the main thread (using the main loop) are supported.
